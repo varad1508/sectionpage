@@ -1,0 +1,298 @@
+body{
+    font-family: 'Poppins',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-attachment: fixed;
+    
+}
+nav{
+    height: 130px;
+    background-color: #333;
+}
+nav .searchbox{
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 10%;
+    float: right;
+    padding-right: 120px;
+    margin-right: 50px;
+    margin: 0 100px;
+    top: 30px;
+}
+nav section{
+    position: relative;
+    margin-left: 25px;
+    padding-top: 40px;
+    line-height: 30px;
+    font-size: 38px;
+    color: white;
+}
+nav img{
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    width: 135px;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 30px 8px;
+    margin-bottom: -100px;
+}
+nav h2{
+    color: white;
+}
+
+nav ul li a{
+    color: #aaa;
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    bottom: 35px;
+    text-decoration: none;
+
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+@media (max-width: 944px) {
+nav h2{
+    position: absolute;
+    right: 290px;
+    top: 10px;
+    width: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+ul{
+    position: absolute;
+}
+
+
+nav ul li a{
+    font-size: 17px;
+}
+}
+
+
+@media (max-width: 860px) {
+  label #btn{
+      display: block;
+  }
+  nav .searchbox{
+      display: flex;
+      position: absolute;
+      bottom: 2px;
+      margin-top: 50px;
+      padding-left: 60px;
+      
+  }
+  nav{
+      width: 100%;
+  }
+  
+  nav ul{
+     
+      position: absolute;
+      width: 100%;
+      height: 250vh;
+      background: #222;
+      display: block;
+      top: 118px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+      z-index: 100;
+      
+  }
+  
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+       left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+  
+} 
+
+
+
+/* FOOOOOOTERRRRRRRR */
+section{
+    padding-top: -500px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+center img:hover{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+    overflow: hidden;
+
+}
+img h3{
+    width: 200;
+    max-width:100%;
+    height: auto;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+footer{
+    width: 100%;
+    background: #222;
+    color: #aaa;
+    margin-bottom: 0px;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.box{
+    flex: 1;
+    margin: 15px;
+    margin-left: 5%;
+    min-width: 300px;
+    
+
+}
+.box h2{
+    
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #555;
+    position: relative;
+    margin-bottom: 30px;
+}
+.box h2::before{
+    content: "";
+    width: 100px;
+    height: 100%;
+    border-bottom: 2px solid crimson;
+    position: absolute;
+}
+.box a{
+    color: #aaa;
+    text-decoration: none;
+    display: inline-block;
+}
+.box a i{
+    background: #333;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+    transition: 0.5s linear;
+
+}
+.box a:hover,
+.box a:hover i{
+    color: crimson;
+    border-radius: 50%;
+}
+.social{
+    margin-top: 50px;
+}
+.subcategories a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.sublinks a{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+span{
+    color: crimson;
+}
+.author{
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+/* cardddddddddddd */
+section .container .row a img{
+    padding-right: 40px;
+    
+}
+
+@media (max-width:860px){
+    section .row .col-lg-4 img{
+        padding-left: 10px;
+    }
+    section .row .col-lg-4 img center p{
+        font-weight: 20px;
+        border: 1px solid black;
+    }
+    section{
+        padding-top: 10px;
+        
+    }
+}
+@media (max-width:380px){
+   body{
+       min-width: 100%;
+   }
+}
